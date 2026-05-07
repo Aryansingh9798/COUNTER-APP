@@ -3,23 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Counter App</title>
+  <title>Advanced Counter App</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="box">
-    <h1>Counter App</h1>
+  <div class="container">
 
-    <div id="count">0</div>
+    <h1>Advanced Counter App</h1>
 
-    <button onclick="increase()">+</button>
-    <button onclick="decrease()">-</button>
-    <button onclick="reset()">Reset</button>
+    <div class="counter-box">
+      <h2 id="count">0</h2>
+    </div>
+
+    <div class="buttons">
+      <button onclick="increase()">Increase</button>
+      <button onclick="decrease()">Decrease</button>
+      <button onclick="reset()">Reset</button>
+      <button onclick="toggleTheme()">Dark Mode</button>
+    </div>
+
+    <div class="history-box">
+      <h3>Counter History</h3>
+      <ul id="history"></ul>
+    </div>
+
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
